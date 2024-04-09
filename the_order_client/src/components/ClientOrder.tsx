@@ -1,16 +1,10 @@
 import { Pedido, Product } from '@/types'
-import React, { useEffect, useState } from 'react'
+import  { useEffect, useState } from 'react'
 
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select"
+
 import { getAllProducts } from '@/api/task.api';
-import { updateOrder } from '../api/task.api';
+
 
 interface OrderProps {
   pedido: Pedido;
@@ -40,13 +34,6 @@ export default function ClientOrder({ pedido }: OrderProps) {
   }, [])
 
 
-  const handleSelectChange = (newValue:string) => {
-    //setEstadoPedido(newValue);
-    updateOrder(pedido.id, {
-      nombre_cliente: pedido.nombre_cliente,
-      estado: newValue
-    })
-  };
 
   
 
