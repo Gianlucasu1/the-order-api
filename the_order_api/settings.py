@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-)9$tva50x-*5#wi6k%r!sre)j6&(+zsbxa9vk7rnx)tvwpm8%g'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['https://the-order-api-eb7745fd53d7.herokuapp.com/', 'localhost', '127.0.0.1']
 
